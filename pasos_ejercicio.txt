@@ -1,0 +1,46 @@
+Instalar Python y crear entorno virtual
+# Verificar instalación existente
+python --version
+
+# Crear entorno virtual
+python -m venv analisis_datos_env
+
+# Activar entorno
+source analisis_datos_env/bin/activate  # En Windows: analisis_datos_env\Scripts\activate
+
+Instalar bibliotecas esenciales:
+
+# Instalar NumPy primero (base de todo)
+pip install numpy
+
+# Instalar Pandas
+pip install pandas
+
+# Instalar Matplotlib para visualización
+pip install matplotlib
+
+# Instalar Jupyter para notebooks
+pip install jupyter
+
+# Verificar versiones
+python -c "import numpy as np; import pandas as pd; import matplotlib; print('NumPy:', np.__version__); print('Pandas:', pd.__version__); print('Matplotlib:', plt.__version__)"
+### NumPy: 2.3.5
+###Pandas: 2.3.3
+###Matplotlib: 3.10.7
+
+# Probar Jupyter
+jupyter --version
+## Selected Jupyter core packages...
+IPython          : 9.7.0
+ipykernel        : 7.1.0
+ipywidgets       : 8.1.8
+jupyter_client   : 8.6.3
+jupyter_core     : 5.9.1
+jupyter_server   : 2.17.0
+jupyterlab       : 4.4.10
+nbclient         : 0.10.2
+nbconvert        : 7.16.6
+nbformat         : 5.10.4
+notebook         : 7.4.7
+qtconsole        : not installed
+traitlets        : 5.14.3
